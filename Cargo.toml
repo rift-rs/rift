@@ -1,0 +1,16 @@
+[package]
+name = "rift"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[lib]
+name = "librift"
+path = "src/lib.rs"
+
+[[bin]]
+name = "riftd"
+path = "src/bin/riftd.rs"
+test = false
+bench = false

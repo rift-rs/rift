@@ -4,6 +4,13 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+exitcode = "1.1"
+slog = { version = "2.7", features = ["nested-values"]}
+slog-async = { version = "2.7", features = ["nested-values"] }
+slog-json = { version = "2.4", features = ["nested-values"] }
+slog-term = { version = "2.8", features = ["nested-values"] }
+structopt = "0.3"
+thiserror = "1.0"
 
 [lib]
 name = "librift"

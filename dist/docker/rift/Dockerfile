@@ -34,8 +34,8 @@ ARG TARGETARCH
 ARG BUILD=debug
 
 LABEL org.opencontainers.image.source=https://github.com/rift-rs/rift
-LABEL SPDX-License-Identifier=GPL-3.0
-LABEL SPDX-License-Path=/LICENSE
+LABEL SPDX-License-Identifier=GPL-3.0-or-later
+LABEL License-Container-Path=/LICENSE
 
 HEALTHCHECK --interval=10s --timeout=1s --start-period=5s --retries=3 CMD [ "/bin/grpc_health_probe", "-addr", "localhost:8081" ]
 

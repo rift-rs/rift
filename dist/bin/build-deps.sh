@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# (c) Copyright 2022 Christian Saide
+# SPDX-License-Identifier: GPL-3.0g
+
 BUILD_DEPS="upx-ucl"
 PROBE_VERSION="v0.4.6"
 

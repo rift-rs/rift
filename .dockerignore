@@ -5,6 +5,7 @@
 !.cargo/*
 !Cargo.toml
 !Cargo.lock
+!LICENSE
 
 # Build configuration.
 !dist/bin/*

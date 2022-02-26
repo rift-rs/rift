@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # (c) Copyright 2022 Christian Saide
-# SPDX-License-Identifier: GPL-3.0
+# SPDX-License-Identifier: GPL-3.0-or-later
 
 function list_files_missing_lic() {
     find . \
@@ -20,7 +20,7 @@ function list_files_missing_lic() {
         -not -name '*.lock' \
         -not -name '*.toml' \
         -not -name '*.json' \
-        -type f | xargs grep -L 'SPDX-License-Identifier: GPL-3.0'
+        -type f | xargs grep -L 'SPDX-License-Identifier: GPL-3.0-or-later'
 }
 
 function count_files_missing_lic() {
@@ -52,7 +52,7 @@ function count_files_missing_copy() {
 
 if [ $(count_files_missing_lic) -ne 0 ]; then
     cat <<EOF
-There are files missing the 'SPDX-License-Identifier: GPL-3.0' license identifier.
+There are files missing the 'SPDX-License-Identifier: GPL-3.0-or-later' license identifier.
 
 Files:
 $(list_files_missing_lic)

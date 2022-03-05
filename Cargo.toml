@@ -5,6 +5,7 @@ edition = "2021"
 
 [dependencies]
 exitcode = "1.1"
+prometheus = "0.13"
 slog = { version = "2.7", features = ["nested-values"]}
 slog-async = { version = "2.7", features = ["nested-values"] }
 slog-json = { version = "2.4", features = ["nested-values"] }
